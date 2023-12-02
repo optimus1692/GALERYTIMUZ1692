@@ -3,3 +3,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+h1{
+    text-align: center;
+}
+
+.mi-galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    }
+    img {
+        transition: transform 0.3s ease-in-out;
+      }
+      
+      img:hover {
+        transform: scale(1.1);
+      }
+
+      img {
+        width: 200px;
+        height: 150px; /* Ajusta según tus necesidades */
+        object-fit: cover;
+      }
